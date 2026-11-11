@@ -1,0 +1,6 @@
+{
+  "name": "لوحة تحكم إدارة عيادة طب وجراحة الأسنان",
+  "description": "منظومة متكاملة وشاملة لإدارة عيادة طب وجراحة الأسنان: ملفات المرضى، سجل حالات وتشخيصات الأسنان، المواعيد، الأشعة، الفواتير والتقارير المالية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

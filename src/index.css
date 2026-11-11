@@ -1,0 +1,126 @@
+/* Dental Clinic Management - Local Fontsource Imports (Self-hosted offline fonts) */
+/* Alexandria (Headings & Accent Titles) */
+@import "@fontsource/alexandria/400.css";
+@import "@fontsource/alexandria/500.css";
+@import "@fontsource/alexandria/600.css";
+@import "@fontsource/alexandria/700.css";
+@import "@fontsource/alexandria/800.css";
+@import "@fontsource/alexandria/900.css";
+
+/* Readex Pro (Primary Body UI & Labels) */
+@import "@fontsource/readex-pro/300.css";
+@import "@fontsource/readex-pro/400.css";
+@import "@fontsource/readex-pro/500.css";
+@import "@fontsource/readex-pro/600.css";
+@import "@fontsource/readex-pro/700.css";
+
+/* Tajawal (Secondary Body / Fallback) */
+@import "@fontsource/tajawal/400.css";
+@import "@fontsource/tajawal/500.css";
+@import "@fontsource/tajawal/700.css";
+@import "@fontsource/tajawal/800.css";
+
+/* Cairo (Headings & Display) */
+@import "@fontsource/cairo/400.css";
+@import "@fontsource/cairo/500.css";
+@import "@fontsource/cairo/600.css";
+@import "@fontsource/cairo/700.css";
+@import "@fontsource/cairo/800.css";
+@import "@fontsource/cairo/900.css";
+
+/* JetBrains Mono (Code, Dental FDI Tooth Numbers, Numeric Codes) */
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "@fontsource/jetbrains-mono/600.css";
+@import "@fontsource/jetbrains-mono/700.css";
+
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Alexandria', 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Readex Pro', 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Alexandria', 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-sans: 'Readex Pro', 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Readex Pro', 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Alexandria', 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.025em;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  th {
+    font-family: 'Alexandria', 'Cairo', system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  input, select, textarea, button {
+    font-family: inherit;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.page-title {
+  font-family: 'Alexandria', 'Cairo', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+.section-title {
+  font-family: 'Alexandria', 'Cairo', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+
+.card-title {
+  font-family: 'Alexandria', 'Cairo', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+
+.subheading-text {
+  font-family: 'Readex Pro', 'Tajawal', system-ui, sans-serif;
+  color: #64748b;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

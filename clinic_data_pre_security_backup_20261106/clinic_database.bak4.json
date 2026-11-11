@@ -1,0 +1,320 @@
+{
+  "users": [
+    {
+      "id": "usr-doctor-safi",
+      "username": "firas",
+      "fullName": "د. فراس",
+      "passwordHash": "6cd57d0b5742df924f8e441d950901333b647ba3af64e53aa07ffb0bee3af2a7dbd408e037759b07fb672c284a3472a486ae9f55f22d59f621bc3b92320ffe21",
+      "salt": "11cb8abd5aa6ce0394f40ad9d0ba7007",
+      "role": "doctor",
+      "isActive": true,
+      "mustChangePassword": false,
+      "createdAt": "2026-10-19T22:55:56.408Z",
+      "updatedAt": "2026-10-21T16:28:41.424Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "clinicId": "cln-default",
+      "username": "test_doc_1792709374528",
+      "fullName": "د. فحص ديمومة",
+      "role": "doctor",
+      "salt": "e4d6b1641704518667849005a22a10b1",
+      "passwordHash": "7c939697ba7bf9de444c33cfb37bd48bc7d352d3520102a3e9f5cb8cc486630ce42a45d0ce521a514c86d45de6cdf4c1ca4d7e20e173d62204d3a7b6cda588b3",
+      "isActive": true,
+      "id": "usr-1792709374590-zdta",
+      "createdAt": "2026-10-22T22:49:34.590Z",
+      "updatedAt": "2026-10-22T22:49:34.590Z"
+    }
+  ],
+  "patients": [
+    {
+      "id": "P1001",
+      "fullName": "أحمد بن علي",
+      "phone": "0550123456",
+      "birthDate": "1988-06-14",
+      "gender": "male",
+      "address": "الجزائر العاصمة، القبة",
+      "allergies": "لا يوجد",
+      "patientType": "returning",
+      "diseaseCondition": "علاج تسوس الأسنان",
+      "diseaseStatus": "under_treatment",
+      "notes": "مريض منتظم في المواعيد",
+      "createdAt": "2026-08-10T10:00:00Z",
+      "updatedAt": "2026-10-10T11:00:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "P1002",
+      "fullName": "سارة مرابطي",
+      "phone": "0661987654",
+      "birthDate": "1995-03-22",
+      "gender": "female",
+      "address": "بئر مراد رايس",
+      "allergies": "حساسية البنسلين",
+      "patientType": "new",
+      "diseaseCondition": "علاج الجذور والعصب (Endo)",
+      "diseaseStatus": "active",
+      "notes": "تشكو من ألم حاد عند تناول المشروبات الساخنة",
+      "createdAt": "2026-10-18T08:30:00Z",
+      "updatedAt": "2026-10-18T08:30:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "P1003",
+      "fullName": "عمر شريفي",
+      "phone": "0770554433",
+      "birthDate": "1962-11-05",
+      "gender": "male",
+      "address": "حي حسيبة بن بوعلي",
+      "allergies": "مرض السكري",
+      "patientType": "returning",
+      "diseaseCondition": "زرع وتعويض الأسنان",
+      "diseaseStatus": "under_treatment",
+      "notes": "متابعة ما بعد قلع جراحي للسن 36",
+      "createdAt": "2026-09-01T09:00:00Z",
+      "updatedAt": "2026-10-12T14:00:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "P1004",
+      "fullName": "ياسمين قاسم",
+      "phone": "0560778899",
+      "birthDate": "2001-09-18",
+      "gender": "female",
+      "address": "باب الزوار",
+      "allergies": "لا يوجد",
+      "patientType": "new",
+      "diseaseCondition": "تقويم وتعديل الأسنان",
+      "diseaseStatus": "active",
+      "notes": "استشارة لتقويم الأسنان العلوية والسفلية",
+      "createdAt": "2026-10-18T09:15:00Z",
+      "updatedAt": "2026-10-18T09:15:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "P1005",
+      "fullName": "كريم بلحاج",
+      "phone": "0699112233",
+      "birthDate": "1982-01-30",
+      "gender": "male",
+      "address": "الرويبة",
+      "allergies": "لا يوجد",
+      "patientType": "returning",
+      "diseaseCondition": "علاج عصب (ضرس #46)",
+      "diseaseStatus": "under_treatment",
+      "notes": "جلسة ثانية لإتمام حشو القنوات للضرس 46.",
+      "createdAt": "2026-07-20T10:00:00Z",
+      "updatedAt": "2026-10-14T08:00:00Z",
+      "clinicId": "cln-default"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "APT-101",
+      "patientId": "P1001",
+      "appointmentDate": "2026-10-18",
+      "appointmentTime": "09:00",
+      "procedure": "فحص دوري وتنظيف الجير",
+      "status": "scheduled",
+      "cost": 3000,
+      "notes": "جلسة تنظيف وتبييض",
+      "createdAt": "2026-10-18T08:00:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "APT-102",
+      "patientId": "P1002",
+      "appointmentDate": "2026-10-18",
+      "appointmentTime": "10:30",
+      "procedure": "علاج عصب طارئ",
+      "status": "scheduled",
+      "cost": 8000,
+      "notes": "ألم حاد في الضرس السفلي",
+      "createdAt": "2026-10-18T08:15:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "APT-103",
+      "patientId": "P1003",
+      "appointmentDate": "2026-10-18",
+      "appointmentTime": "13:00",
+      "procedure": "متابعة التئام اللثة",
+      "status": "completed",
+      "cost": 2000,
+      "notes": "تمت المعاينة واللثة بحالة جيدة",
+      "createdAt": "2026-10-18T07:45:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "APT-104",
+      "patientId": "P1004",
+      "appointmentDate": "2026-10-19",
+      "appointmentTime": "11:00",
+      "procedure": "استشارة تقويم الأسنان",
+      "status": "scheduled",
+      "cost": 2500,
+      "notes": "أخذ مقاسات الجبس",
+      "createdAt": "2026-10-18T09:30:00Z",
+      "smsReminderSent": true,
+      "smsReminderSentAt": "2026-10-18T21:09:12.233Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "APT-105",
+      "patientId": "P1005",
+      "appointmentDate": "2026-10-19",
+      "appointmentTime": "14:30",
+      "procedure": "حشو عصب دائم (ضرس 46)",
+      "status": "scheduled",
+      "cost": 7000,
+      "notes": "الجلسة النهائية قبل التاج",
+      "createdAt": "2026-10-18T10:00:00Z",
+      "smsReminderSent": true,
+      "smsReminderSentAt": "2026-10-18T21:09:12.234Z",
+      "clinicId": "cln-default"
+    }
+  ],
+  "dentalConditions": [
+    {
+      "id": "CND-1",
+      "patientId": "P1001",
+      "toothNumber": 16,
+      "conditionType": "حشوة كمبوزيت",
+      "treatmentDone": "حشوة تجميلية ضوئية",
+      "status": "treated",
+      "cost": 3500,
+      "recordedDate": "2026-09-15",
+      "notes": "تم ترميم السطح الإطباقي",
+      "createdAt": "2026-09-15T11:00:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "CND-2",
+      "patientId": "P1001",
+      "toothNumber": 46,
+      "conditionType": "تسوس سطحي",
+      "treatmentDone": "تنظيف وتلميع وقائي",
+      "status": "treated",
+      "cost": 3000,
+      "recordedDate": "2026-10-18",
+      "notes": "وقاية ومتابعة دورية",
+      "createdAt": "2026-10-18T09:30:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "CND-3",
+      "patientId": "P1002",
+      "toothNumber": 36,
+      "conditionType": "علاج عصب",
+      "treatmentDone": "سحب العصب وتضميد القنوات",
+      "status": "in_progress",
+      "cost": 6500,
+      "recordedDate": "2026-10-18",
+      "notes": "جلسة أولى لعلاج العصب",
+      "createdAt": "2026-10-18T10:45:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "CND-4",
+      "patientId": "P1005",
+      "toothNumber": 46,
+      "conditionType": "علاج عصب",
+      "treatmentDone": "تجهيز وتوسيع القنوات",
+      "status": "in_progress",
+      "cost": 7000,
+      "recordedDate": "2026-10-10",
+      "notes": "يحتاج لتاج زيركون بعد اكتمال العلاج",
+      "createdAt": "2026-10-10T14:00:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "CND-5",
+      "patientId": "P1003",
+      "toothNumber": 21,
+      "conditionType": "حشوة كمبوزيت",
+      "treatmentDone": "ترميم حافة قاطعة",
+      "status": "treated",
+      "cost": 4500,
+      "recordedDate": "2026-10-05",
+      "notes": "مطابقة ممتازة للون A2.",
+      "createdAt": "2026-10-05T12:00:00Z",
+      "clinicId": "cln-default"
+    }
+  ],
+  "clinicalNotes": [
+    {
+      "id": "NOT-1",
+      "patientId": "P1001",
+      "noteText": "صحة الفم والأسنان ممتازة مع ضرورة استخدام الخيط الطبي يومياً.",
+      "doctorName": "د. محمد أمين",
+      "createdAt": "2026-08-10T10:15:00Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "NOT-2",
+      "patientId": "P1003",
+      "noteText": "مريض سكري منتظم (1.25 g/L). ضغط الدم مستقر 13/8. مراعاة التخدير الخالي من مقبضات الأوعية.",
+      "doctorName": "د. محمد أمين",
+      "createdAt": "2026-10-12T14:30:00Z",
+      "clinicId": "cln-default"
+    }
+  ],
+  "patientFiles": [],
+  "settings": {
+    "smsEnabled": true,
+    "smsProvider": "local_simulator",
+    "smsSenderName": "ElNourDental",
+    "smsAutoSend24h": true,
+    "smsReminderTemplate": "مرحباً {patientName}، نذكركم بموعدكم في {clinicName} يوم {date} على الساعة {time} مع {doctorName}. الإجراء: {procedure}. للاستفسار: {phone}. دمتم بصحة وعافية.",
+    "clinicName": "عيادة النور لطب وجراحة الأسنان",
+    "doctorName": "د. محمد أمين",
+    "phone": "023 45 67 89 / 0550 11 22 33",
+    "address": "الجزائر العاصمة",
+    "storagePath": "/app/applet/clinic_data/patient_files",
+    "autoBackupDaily": true
+  },
+  "smsLogs": [
+    {
+      "id": "SMS-752233-q5a",
+      "appointmentId": "APT-105",
+      "patientId": "P1005",
+      "patientName": "كريم بلحاج",
+      "phone": "0699112233",
+      "message": "مرحباً كريم بلحاج، نذكركم بموعدكم في عيادة النور لطب وجراحة الأسنان يوم 19/10/2026 على الساعة 14:30 مع د. محمد أمين. الإجراء: حشو عصب دائم (ضرس 46). للاستفسار: 023 45 67 89 / 0550 11 22 33. دمتم بصحة وعافية.",
+      "status": "simulated",
+      "provider": "local_simulator",
+      "sentAt": "2026-10-18T21:09:12.234Z",
+      "clinicId": "cln-default"
+    },
+    {
+      "id": "SMS-752233-84q",
+      "appointmentId": "APT-104",
+      "patientId": "P1004",
+      "patientName": "ياسمين قاسم",
+      "phone": "0560778899",
+      "message": "مرحباً ياسمين قاسم، نذكركم بموعدكم في عيادة النور لطب وجراحة الأسنان يوم 19/10/2026 على الساعة 11:00 مع د. محمد أمين. الإجراء: استشارة تقويم الأسنان. للاستفسار: 023 45 67 89 / 0550 11 22 33. دمتم بصحة وعافية.",
+      "status": "simulated",
+      "provider": "local_simulator",
+      "sentAt": "2026-10-18T21:09:12.233Z",
+      "clinicId": "cln-default"
+    }
+  ],
+  "clinics": [
+    {
+      "id": "cln-default",
+      "name": "عيادة النور لطب وجراحة الأسنان",
+      "doctorName": "د. محمد أمين",
+      "ownerUserId": "usr-doctor-safi",
+      "phone": "023 45 67 89 / 0550 11 22 33",
+      "address": "الجزائر العاصمة",
+      "storagePath": "/app/applet/clinic_data/patient_files",
+      "autoBackupDaily": true,
+      "smsEnabled": true,
+      "smsProvider": "local_simulator",
+      "smsSenderName": "ElNourDental",
+      "smsAutoSend24h": true,
+      "smsReminderTemplate": "مرحباً {patientName}، نذكركم بموعدكم في {clinicName} يوم {date} على الساعة {time} مع {doctorName}. الإجراء: {procedure}. للاستفسار: {phone}. دمتم بصحة وعافية.",
+      "createdAt": "2026-10-21T15:25:05.496Z"
+    }
+  ]
+}
